@@ -1,0 +1,17 @@
+{
+  "name": "2223-ca-barzegaraminarmin-opdracht2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "swiper": "^9.0.5"
+  }
+}
