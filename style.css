@@ -110,7 +110,7 @@ footer {
 }
 
 .swiper-title button{
-  background-color: var(--background-color);
+  background-color: var(--background-body);
   border-color: var(--text-color) ;
   border: solid 2px;
   border-radius: 25px;
