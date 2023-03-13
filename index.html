@@ -6,117 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opdracht04: Github update</title>
 
-    <link rel="stylesheet" href="https://api.mapbox.com/geocoding/v5/{endpoint}/{longitude},{latitude}.json">
-
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/geocoding/v5/{endpoint}/{longitude},{latitude}.json"
+    />
   </head>
 
-  <header>  
+  <header>
     <div class="header">
-        <!-- ChatGPT -->
+      <!-- ChatGPT -->
       <div class="header-logo">
-        <img src="images/logo.png" alt="logo-abc">
+        <img src="images/logo.png" alt="logo-abc" />
       </div>
 
       <nav class="header-navigation">
         <a href="#">info@yuba.be</a>
         <a href="#">+32(0)3 564 51 71</a>
       </nav>
-
     </div>
   </header>
 
   <body>
-
     <div class="loader">
       <div class="loader-inner"></div>
     </div>
 
     <div class="frontpage">
-
-      <div class="swiper-title"> 
-        <h1>Claim your <span> Star</span> </h1>
+      <div class="swiper-title">
+        <h1>Claim your <span> Star</span></h1>
         <h2>Purchase a real life star</h2>
         <button>Buy Now</button>
       </div>
 
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/2.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/3.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/4.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/5.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/6.jpeg" /></div>
+        </div>
 
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="images/2.jpeg"></div>
-    <div class="swiper-slide"><img src="images/3.jpeg"></div>
-    <div class="swiper-slide"><img src="images/4.jpeg"></div>
-    <div class="swiper-slide"><img src="images/5.jpeg"></div>
-    <div class="swiper-slide"><img src="images/6.jpeg"></div>
-  </div>
+        <div class="swiper-pagination"></div>
 
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-</div>
-      <!-- Hier begint mijn openingsuren tabel 
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Hier begint mijn openingsuren tabel 
   Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
-  <div class="opening-hours">
-    <table class="opening-hours__table">
-      <thead>
-        <tr>
-          <th class="opening-hours__title" colspan="2">Opening Hours Office</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="opening-hours__day">Mon</td>
-          <td class="opening-hours__hours">10:00-19:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Tues</td>
-          <td class="opening-hours__hours">10:00-19:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Wed</td>
-          <td class="opening-hours__hours">08:00-15:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Thur</td>
-          <td class="opening-hours__hours">10:00-19:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Fri</td>
-          <td class="opening-hours__hours">08:00-15:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Sat</td>
-          <td class="opening-hours__hours">08:00-15:00</td>
-        </tr>
-        <tr>
-          <td class="opening-hours__day">Sun</td>
-          <td class="opening-hours__hours">Closed</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-<!-- Hier eindigt mijn openingsuren tabel -->
-
-<footer>
-  <div class="container">
-    <div class="footer-left">
-      <p class="footer-left-text">
-          If you have any questions or concerns, feel free to contact us.
-      </p>
-      <br>
-      <p id="footer-left-reversegeolocation">
-        This is my adress.
-      </p>
+    <div class="opening-hours">
+      <table class="opening-hours__table">
+        <thead>
+          <tr>
+            <th class="opening-hours__title" colspan="2">
+              Opening Hours Office
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="opening-hours__day">Mon</td>
+            <td class="opening-hours__hours">10:00-19:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Tues</td>
+            <td class="opening-hours__hours">10:00-19:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Wed</td>
+            <td class="opening-hours__hours">08:00-15:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Thur</td>
+            <td class="opening-hours__hours">10:00-19:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Fri</td>
+            <td class="opening-hours__hours">08:00-15:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Sat</td>
+            <td class="opening-hours__hours">08:00-15:00</td>
+          </tr>
+          <tr>
+            <td class="opening-hours__day">Sun</td>
+            <td class="opening-hours__hours">Closed</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <!-- Hier eindigt mijn openingsuren tabel -->
 
-    <div class="footer-right">
-      <button class="footer-left-email">Email Me</button>
-    </div>
-  </div>
-  <p class="footer__copyright-tag">Copyright Armin © 2023</p>
-</footer>
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <p class="footer-left-text">
+            If you have any questions or concerns, feel free to contact us.
+          </p>
+          <br />
+          <p id="footer-left-reversegeolocation">This is my adress.</p>
+        </div>
 
+        <div class="footer-right">
+          <button class="footer-left-email">Email Me</button>
+        </div>
+      </div>
+      <p class="footer__copyright-tag">Copyright Armin © 2023</p>
+    </footer>
   </body>
 
   <div id="app"></div>

@@ -1,7 +1,7 @@
 @import 'swiper/css';
 
 :root {
-  --font-family: "area-normal", sans-serif;
+  --font-family: 'area-normal', sans-serif;
   --font-weight: 400;
   --text-color: rgb(235, 235, 235);
   --background-color: rgb(12, 12, 12);
@@ -23,33 +23,34 @@ header {
 body {
   background-color: var(--background-body);
 }
-  
+
 footer {
   background-color: var(--background-color);
   color: var(--text-color);
   padding: 30px 0 30px 0;
-  margin-top: 00px ;
+  margin-top: 00px;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: auto;
 }
 
-.header-logo, .header-logo img {
+.header-logo,
+.header-logo img {
   display: flex;
   width: 20px;
   height: 100%;
 }
-  
+
 .header-navigation {
   display: flex;
   padding-top: 5px;
 }
 
-.header-navigation a{
+.header-navigation a {
   color: var(--text-color);
   font-size: 16px;
   font-family: var(--font-family);
@@ -58,7 +59,7 @@ footer {
   position: relative;
   margin-left: 70px;
 }
-  
+
 .header-navigation a::after {
   content: '';
   position: absolute;
@@ -73,23 +74,25 @@ footer {
 .header-navigation a:hover::after {
   width: 100%;
 }
- 
-.frontpage{
+
+.frontpage {
   display: flex;
   width: 80%;
   margin: auto;
   padding-top: 200px;
   padding-left: 30px;
 }
- 
-.swiper, .swiper-slide img {
+
+.swiper,
+.swiper-slide img {
   width: 100%;
   height: 300px;
   border-radius: 25px;
   object-fit: cover;
 }
 
-.swiper-title, .swiper-title h1{
+.swiper-title,
+.swiper-title h1 {
   width: 100%;
   color: var(--text-color);
   font-size: 50px;
@@ -97,11 +100,11 @@ footer {
   font-weight: 900;
 }
 
-.swiper-title h1 span{
-  color:  rgb(224, 221, 19);
+.swiper-title h1 span {
+  color: rgb(224, 221, 19);
 }
 
-.swiper-title h2{
+.swiper-title h2 {
   margin-top: 20px;
   color: var(--text-color);
   font-size: 26px;
@@ -109,9 +112,9 @@ footer {
   font-weight: 900;
 }
 
-.swiper-title button{
+.swiper-title button {
   background-color: var(--background-body);
-  border-color: var(--text-color) ;
+  border-color: var(--text-color);
   border: solid 2px;
   border-radius: 25px;
   padding: 6px 20px 9px 20px;
@@ -123,7 +126,7 @@ footer {
   transition: 0.2s ease-in-out;
 }
 
-.swiper-title button:hover{
+.swiper-title button:hover {
   background-color: var(--text-color);
   color: var(--background-color);
   border-color: var(--text-color);
@@ -141,12 +144,14 @@ footer {
   font-weight: var(--font-weight);
 }
 
-.opening-hours td, .opening-hours th{
+.opening-hours td,
+.opening-hours th {
   padding: 3px 30px 9px 30px;
   font-size: 14px;
 }
 
-.opening-hours table, .opening-hours td {
+.opening-hours table,
+.opening-hours td {
   border: 1px solid var(--table-border-color);
 }
 
@@ -157,7 +162,8 @@ footer {
   margin: 0 auto;
 }
 
-.footer-left-text, #footer-left-reversegeolocation{
+.footer-left-text,
+#footer-left-reversegeolocation {
   font-size: 14px;
   color: var(--text-color);
   font-family: var(--font-family);
@@ -166,7 +172,7 @@ footer {
 
 .footer-left-email {
   background-color: rgb(17, 17, 17);
-  border-color: rgb(230, 230, 230) ;
+  border-color: rgb(230, 230, 230);
   border: solid 2px;
   border-radius: 25px;
   padding: 6px 15px 6px 15px;
@@ -177,14 +183,14 @@ footer {
   transition: 0.2s ease-in-out;
 }
 
-.footer-left-email:hover{
+.footer-left-email:hover {
   background-color: var(--table-border-color);
   color: rgb(17, 17, 17);
   border-color: var(--table-border-color);
   transition: 0.2s ease-in-out;
 }
 
-.footer__copyright-tag{
+.footer__copyright-tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,82 +248,84 @@ Feedback:
 - loader op plaats van de adress plaatsen (optioneel)
 */
 
-
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: center;
   }
-  
-  .header-logo img, .header-logo {
+
+  .header-logo img,
+  .header-logo {
     width: 20px;
     margin-left: -10px;
   }
-  
+
   .header-navigation {
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     margin-top: 10px;
   }
 
-  .header-navigation a{
+  .header-navigation a {
     margin-left: -20px;
     padding-top: 6px;
   }
-  
+
   .frontpage {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
     padding-left: 0;
   }
-  
-  .swiper, .swiper-slide img {
+
+  .swiper,
+  .swiper-slide img {
     height: 240px;
     border-radius: 2;
     margin-top: 20px;
   }
-  
+
   .swiper-title h1 {
     font-size: 40px;
   }
-  
+
   .swiper-title h2 {
     font-size: 16px;
   }
-  
+
   .swiper-title button {
     margin-top: 10px;
   }
-  
+
   .opening-hours {
     margin: 40px 0 0 0;
   }
-  
-  .opening-hours td, .opening-hours th {
+
+  .opening-hours td,
+  .opening-hours th {
     padding: 6px 20px 6px 20px;
     font-size: 16px;
   }
-  
+
   .container {
     flex-direction: column;
     align-items: center;
   }
-  
-  .footer-left-text, #footer-left-reversegeolocation {
+
+  .footer-left-text,
+  #footer-left-reversegeolocation {
     font-size: 12px;
     text-align: center;
     font-weight: 200;
   }
 
-  #footer-left-reversegeolocation{
+  #footer-left-reversegeolocation {
     margin-bottom: 20px;
   }
-  
+
   .footer-left-email {
     font-size: 14px;
     padding: 4px 10px;
   }
-
 }
