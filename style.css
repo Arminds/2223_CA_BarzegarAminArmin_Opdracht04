@@ -4,6 +4,7 @@
   --font-family: 'area-normal', sans-serif;
   --font-weight: 400;
   --text-color: rgb(235, 235, 235);
+  --paragraph-color: rgb(207, 207, 207);
   --background-color: rgb(12, 12, 12);
   --table-border-color: rgb(235, 235, 235);
   --background-body: rgb(29, 29, 29);
@@ -133,6 +134,45 @@ footer {
   transition: 0.2s ease-in-out;
 }
 
+.about {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 30px;
+  gap: 2%;
+}
+
+.about-image {
+  width: 50%;
+}
+.about img {
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.about-words {
+  width: 50%;
+}
+
+.about-title {
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: 26px;
+  font-family: var(--font-family);
+  font-weight: 900;
+}
+
+.about-text {
+  margin-top: 20px;
+  color: var(--paragraph-color);
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+/*
 .opening-hours {
   display: flex;
   justify-content: center;
@@ -153,6 +193,21 @@ footer {
 .opening-hours table,
 .opening-hours td {
   border: 1px solid var(--table-border-color);
+}
+*/
+.open {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.open-text {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
 }
 
 .container {
@@ -228,6 +283,8 @@ footer {
   animation: loader-rotate 1s linear infinite;
 }
 
+/* End code loader */
+
 @keyframes loader-rotate {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -236,17 +293,6 @@ footer {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-
-/* End code loader */
-
-/* 
-Feedback:
-
-- Witruimte verminderen, boven en onder de frontpage. CHECk
-- Openingsuren recht plaatsen onder de swiper ofzo, docent is geen fan van kaders. 
-- Onder openingsuren is een grijze balk voor geen reden. CHECK
-- loader op plaats van de adress plaatsen (optioneel)
-*/
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
@@ -298,6 +344,26 @@ Feedback:
     margin-top: 10px;
   }
 
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .about-image,
+  .about-words {
+    padding-top: 30px;
+    width: 100%;
+    border-radius: 2;
+    margin-top: 20px;
+  }
+
+  .open-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  /*
   .opening-hours {
     margin: 40px 0 0 0;
   }
@@ -307,7 +373,7 @@ Feedback:
     padding: 6px 20px 6px 20px;
     font-size: 16px;
   }
-
+*/
   .container {
     flex-direction: column;
     align-items: center;
